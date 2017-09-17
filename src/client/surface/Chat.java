@@ -68,7 +68,7 @@ public class Chat extends JFrame implements ActionListener {
 				LinkServerThread lst = ManageThread.getLinkServerThread(ownerId);
 				ObjectOutputStream oos = new ObjectOutputStream(lst.getSocket().getOutputStream());
 				oos.writeObject(message);
-				String content = "你对" + friendId + "˵:" + textField.getText() + "\r\n";
+				String content = "你对" + friendId + "说:" + textField.getText() + "\r\n";
 				textArea.append(content);
 				textField.setText("");
 			} catch (Exception e2) {
