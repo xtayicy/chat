@@ -32,7 +32,7 @@ public class LinkServerThread extends Thread {
 				Message message = (Message) ois.readObject();
 				
 				if(message.getMessageType().equals(MessageType.MESSAGE)){
-					System.out.println("��ȡ���ӷ�������������Ϣ" + message.getSender() + "��" + message.getGetter() + "˵:" + message.getContent());
+					System.out.println("读取到从服务器发来的消息" + message.getSender() + "对" + message.getGetter() + "说:" + message.getContent());
 					Chat chat = ManageChat.getChat(message.getGetter()+""+message.getSender());
 					chat.showMessage(message);
 				}else if(message.getMessageType().equals(MessageType.MESSAGE_RETURN_ONLINEFRIEND)){
