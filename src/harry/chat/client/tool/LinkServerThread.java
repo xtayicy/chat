@@ -1,12 +1,11 @@
-package client.tool;
+package harry.chat.client.tool;
+
+import harry.chat.client.surface.*;
+import harry.chat.common.Message;
+import harry.chat.common.MessageType;
 
 import java.io.ObjectInputStream;
 import java.net.Socket;
-
-import client.surface.*;
-
-import common.Message;
-import common.MessageType;
 
 /**
  * 
@@ -46,7 +45,6 @@ public class LinkServerThread extends Thread {
 				}
 				
 			} catch (Exception e) {
-				// TODO: handle exception
 			}
 		}
 	}

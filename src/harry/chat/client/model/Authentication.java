@@ -1,5 +1,5 @@
-package client.model;
-import common.*;
+package harry.chat.client.model;
+import harry.chat.common.*;
 
 /**
  * 

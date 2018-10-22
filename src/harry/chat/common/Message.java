@@ -1,4 +1,4 @@
-package common;
+package harry.chat.common;
 
 /**
  * 
@@ -54,5 +54,12 @@ public class Message implements java.io.Serializable{
 
 	public void setMessageType(String messageType) {
 		this.messageType = messageType;
+	}
+
+	@Override
+	public String toString() {
+		return "Message [messageType=" + messageType + ", getter=" + getter
+				+ ", sender=" + sender + ", content=" + content + ", date="
+				+ date + "]";
 	}
 }

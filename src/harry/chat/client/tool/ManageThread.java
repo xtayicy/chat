@@ -1,7 +1,12 @@
-package client.tool;
+package harry.chat.client.tool;
 
 import java.util.HashMap;
 
+/**
+ * 
+ * @author Harry
+ *
+ */
 public class ManageThread{
 	private static HashMap<String, LinkServerThread> hm = new HashMap<String, LinkServerThread>();
 	

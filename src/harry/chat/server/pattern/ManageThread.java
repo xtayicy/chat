@@ -1,4 +1,4 @@
-package server.pattern;
+package harry.chat.server.pattern;
 
 import java.util.HashMap;
 import java.util.Iterator;

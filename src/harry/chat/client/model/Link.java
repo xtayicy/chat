@@ -1,10 +1,10 @@
-package client.model;
+package harry.chat.client.model;
+
+import harry.chat.client.tool.*;
+import harry.chat.common.*;
 
 import java.io.*;
 import java.net.*;
-
-import client.tool.*;
-import common.*;
 
 /**
  * 
@@ -12,7 +12,7 @@ import common.*;
  *
  */
 public class Link {
-	public Socket socket;
+	private Socket socket;
 
 	public boolean send(Object o) {
 		try {
@@ -35,5 +35,18 @@ public class Link {
 			e.printStackTrace();
 		}
 		return false;
+	}
+
+	public Socket getSocket() {
+		return socket;
+	}
+
+	public void setSocket(Socket socket) {
+		this.socket = socket;
+	}
+
+	@Override
+	public String toString() {
+		return "Link [socket=" + socket + "]";
 	}
 }

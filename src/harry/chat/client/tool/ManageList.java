@@ -1,8 +1,8 @@
-package client.tool;
+package harry.chat.client.tool;
+
+import harry.chat.client.surface.List;
 
 import java.util.HashMap;
-
-import client.surface.List;
 
 /**
  * 

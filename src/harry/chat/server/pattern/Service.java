@@ -1,9 +1,9 @@
-package server.pattern;
+package harry.chat.server.pattern;
+
+import harry.chat.common.*;
 
 import java.io.*;
 import java.net.*;
-
-import common.*;
 
 /**
  * 

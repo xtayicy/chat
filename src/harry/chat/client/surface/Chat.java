@@ -1,4 +1,8 @@
-package client.surface;
+package harry.chat.client.surface;
+
+import harry.chat.client.tool.*;
+import harry.chat.common.Message;
+import harry.chat.common.MessageType;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -10,11 +14,6 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-import client.tool.*;
-
-import common.Message;
-import common.MessageType;
-
 /**
  * 
  * @author harry
@@ -22,12 +21,12 @@ import common.MessageType;
  */
 @SuppressWarnings("serial")
 public class Chat extends JFrame implements ActionListener {
-	JTextArea textArea;
-	JTextField textField;
-	JButton button;
-	JPanel panel;
-	String ownerId;
-	String friendId;
+	private JTextArea textArea;
+	private JTextField textField;
+	private JButton button;
+	private JPanel panel;
+	private String ownerId;
+	private String friendId;
 
 	public Chat(String ownerId, String friendId) {
 		this.ownerId = ownerId;
@@ -72,8 +71,62 @@ public class Chat extends JFrame implements ActionListener {
 				textArea.append(content);
 				textField.setText("");
 			} catch (Exception e2) {
-				// TODO: handle exception
 			}
 		}
+	}
+
+	public JTextArea getTextArea() {
+		return textArea;
+	}
+
+	public void setTextArea(JTextArea textArea) {
+		this.textArea = textArea;
+	}
+
+	public JTextField getTextField() {
+		return textField;
+	}
+
+	public void setTextField(JTextField textField) {
+		this.textField = textField;
+	}
+
+	public JButton getButton() {
+		return button;
+	}
+
+	public void setButton(JButton button) {
+		this.button = button;
+	}
+
+	public JPanel getPanel() {
+		return panel;
+	}
+
+	public void setPanel(JPanel panel) {
+		this.panel = panel;
+	}
+
+	public String getOwnerId() {
+		return ownerId;
+	}
+
+	public void setOwnerId(String ownerId) {
+		this.ownerId = ownerId;
+	}
+
+	public String getFriendId() {
+		return friendId;
+	}
+
+	public void setFriendId(String friendId) {
+		this.friendId = friendId;
+	}
+
+	@Override
+	public String toString() {
+		return "Chat [textArea=" + textArea + ", textField=" + textField
+				+ ", button=" + button + ", panel=" + panel + ", ownerId="
+				+ ownerId + ", friendId=" + friendId + "]";
 	}
 }

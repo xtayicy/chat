@@ -1,8 +1,10 @@
-package server.surface;
+package harry.chat.server.surface;
+
+import harry.chat.server.pattern.*;
 
 import java.awt.event.*;
+
 import javax.swing.*;
-import server.pattern.*;
 
 public class Surface extends JFrame implements ActionListener{
 	JPanel panel;

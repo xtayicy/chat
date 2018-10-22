@@ -1,4 +1,7 @@
-package server.pattern;
+package harry.chat.server.pattern;
+
+import harry.chat.common.Message;
+import harry.chat.common.MessageType;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -6,9 +9,6 @@ import java.io.ObjectOutputStream;
 import java.net.Socket;
 import java.util.HashMap;
 import java.util.Iterator;
-
-import common.Message;
-import common.MessageType;
 
 /**
  * 
